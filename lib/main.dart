@@ -1,7 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_google_map/screens/geo_coding_test_screen.dart';
-
-import 'screens/home_screen.dart';
+import 'constants/export.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -18,8 +15,12 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Google Map',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: const HomeScreen(),
+      // home: const CustomStyleGoogleMapScreen(),
       // home: const GeoCodingTestScreen(),
+      home: const HomeScreen(),
+      // home: const PlacesApiScreen(),
+      // home: const GoogleMapPolylineNewTest(),
+      // home: GoogleMapWidgetPkgTest(),
     );
   }
 }
